@@ -3,6 +3,12 @@
 Build it in go-lang
 Build it in c++??
 
+## RUNING
+- `./run.sh`    - a shell script to run and build the program
+
+#### Manuel Build / run
+- `go build`    - build the binary
+- `./qouteCli`  - run the binary
 
 ## plans -- Stories
 - TDD - TEST DRIVEN!! FROM THE START
@@ -12,5 +18,5 @@ Build it in c++??
     - store in a csv -- for now
     - add a flag for a category -- "motivational", "emotinal", etc (be able to add and list flags for a qoute)
 
-## Storiy
+## Stories
 - "sometimes while programming you need a quick burst of motivation, one that does not take you out of the flow, one that does not distract you, here it is qoutes-cli."
