@@ -3,12 +3,15 @@
 Build it in go-lang
 Build it in c++??
 
-## RUNING
-- `./run.sh`    - a shell script to run and build the program
+## RUNING the program
+- `cd build`    - open the build directory
+- `cmake ..`    - build the makefile
 
 #### Manuel Build / run
-- `go build`    - build the binary
-- `./qouteCli`  - run the binary
+- `cmake ..`            - build the makefile
+- `make`                - build the binary
+- `chmod +x qouteCLI`   - give run permission (Linux / MacOS)
+- `./qouteCLI`          - run the binary (Linux / MacOS)
 
 ## plans -- Stories
 - TDD - TEST DRIVEN!! FROM THE START
