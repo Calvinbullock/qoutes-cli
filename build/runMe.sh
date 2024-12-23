@@ -1,15 +1,14 @@
 
-# FOR GUI compile
-# make
-# ./runMe
-# make clean
 
-# testing no gui
+# make
 make
 
 echo "--------------------------------------------------"
-./qouteCLI
+
+# Get the arguments passed to this script
+#./qouteCLI "${ARGS[@]}"
+./qouteCLI "$@"
 
 echo "--------------------------------------------------"
 #rm runMe
-make clean
+#make clean

@@ -1,11 +1,11 @@
 
 #include "qoute.h"
+#include "cli.h"
 
 int main (int argc, char *argv[]) {
-    Qoute q = Qoute("To Live or Die", "LeeYe");
-    q.addQouteTag("this");
 
-    q.print();
+    Cli cli = Cli();
+    cli.parse(argc, argv);
 
     return 0;
 }

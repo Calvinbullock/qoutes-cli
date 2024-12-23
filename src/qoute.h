@@ -1,4 +1,6 @@
 
+#pragma once
+
 #include <iostream>
 #include <string>
 #include <vector>
@@ -16,12 +18,12 @@ public:
     //
     // print / display
     void print() {
-        std::cout << qoute << std::endl;
-        std::cout << "- "<< author << std::endl;
+        std::cout << "    " << qoute << std::endl;
+        std::cout << "    - " << author << std::endl;
     }
     void printTags() {
         for (int i = 0; i < tags.size(); i++) {
-            std::cout << tags[i] << std::endl;
+            std::cout << "1. " << tags[i] << "\n" << std::endl;
         }
     }
 
