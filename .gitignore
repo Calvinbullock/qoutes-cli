@@ -1,5 +1,6 @@
-runMe
+# make files
 CMakeFiles
 build/CMakeCache.txt
-build/Makefile
 build/cmake_install.cmake
+build/Makefile
+build/qouteCLI
