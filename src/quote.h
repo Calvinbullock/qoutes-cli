@@ -6,18 +6,21 @@
 #include <vector>
 using namespace std;
 
-class Qoute {
+class Quote {
 
 public:
     //
     // constructors
-    Qoute() : qoute(), author(), tags() {}
-    Qoute(const string &qoute, const string &author)
+    Quote() : qoute(), author(), tags() {}
+    Quote(const string &author, const string &qoute)
          : qoute(qoute), author(author), tags() {}
 
     //
     // print / display
-    void print() {
+    std::string print() {
+        return "    " + qoute + "\n"
+             + "    - " + author + "\n";
+
         std::cout << "    " << qoute << std::endl;
         std::cout << "    - " << author << std::endl;
     }

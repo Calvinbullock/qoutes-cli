@@ -1,11 +1,12 @@
 
-#include "qoute.h"
 #include "cli.h"
+#include "quotes.h"
 
 int main (int argc, char *argv[]) {
-
     Cli cli = Cli();
-    cli.parse(argc, argv);
+
+    Quotes quotes = Quotes();
+    cli.parse(argc, argv, quotes);
 
     return 0;
 }
