@@ -7,23 +7,22 @@
 #include "quote.h"
 #include "quotes.h"
 
-class Cli {
+class CliArg {
 
 public:
-    Cli() {}
-    ~Cli() {}
+    CliArg() {}
+    ~CliArg() {}
 
     void parse(int argc, char *argv[], Quotes &quotes) {
         // Iterate through arguments (starting from index 1 to skip the program name)
         for (int i = 1; i < argc; ++i) {
             std::string arg = argv[i];
 
-            // Process each argument as needed
             if (arg == "-h" || arg == "--help") {
                 help();
 
             } else if (arg == "-v" || arg == "--version") {
-                std::cout << "Version: 1.0\n" << std::endl;
+                std::cout << "Version: 1.0" << std::endl;
 
             } else if ((arg == "-p" || arg == "--print") && i+1 < argc) {
                 print(quotes, i);
@@ -44,8 +43,6 @@ public:
 
 private:
     void printAll(Quotes &quotes) {
-        std::cout << quotes.getSize() << std::endl;
-
         quotes.print();
     }
 
@@ -76,9 +73,8 @@ private:
     }
 };
 
-
 // for testing
-class cliDerived : public Cli {
+class cliDerived : public CliArg {
 public:
 
 };

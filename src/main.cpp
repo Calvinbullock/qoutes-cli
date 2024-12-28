@@ -1,9 +1,9 @@
 
-#include "cli.h"
+#include "cliArg.h"
 #include "quotes.h"
 
 int main (int argc, char *argv[]) {
-    Cli cli = Cli();
+    CliArg cli = CliArg();
 
     Quotes quotes = Quotes();
     cli.parse(argc, argv, quotes);
