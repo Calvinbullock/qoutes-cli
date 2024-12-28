@@ -22,7 +22,7 @@ public:
                 help();
 
             } else if (arg == "-v" || arg == "--version") {
-                std::cout << "Version: 1.0" << std::endl;
+                std::cout << "Version: 0.01" << std::endl;
 
             } else if ((arg == "-p" || arg == "--print") && i+1 < argc) {
                 print(quotes, i);
@@ -48,6 +48,7 @@ private:
     void printRandom(Quotes &quotes) {
         quotes.printRandom();
     }
+
     void printAll(Quotes &quotes) {
         quotes.print();
     }
@@ -74,6 +75,8 @@ private:
             << "  -h, --help: Display this help message\n"
             << "  -P: Print All qoutes\n"
             << "  -p num: Print qoute number\n"
+            << "  -r : Print random qoute\n"
+            << "  -a : add a qoute\n"
             << "  <arg2>: Second argument\n"
             << std::endl;
     }
