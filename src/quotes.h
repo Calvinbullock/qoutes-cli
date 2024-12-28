@@ -2,6 +2,8 @@
 #pragma once
 
 #include "quote.h"
+#include <cassert>
+#include <cstdlib>
 #include <iostream>
 #include <string>
 
@@ -22,7 +24,7 @@ public:
     }
 
     //
-    // Overides
+    // Operator Overrides
     const Quote* operator[](size_t index) const {
         if (index >= quoteList.size()) {
             throw std::out_of_range("Index out of bounds");
@@ -39,6 +41,14 @@ public:
 
     //
     // Operations
+    void printRandom() {
+        // get and check random number
+        srand(time(nullptr)); // Seed the random number generator
+        int randNum = rand() % quoteList.size();
+        assert(0 <= randNum && randNum <= quoteList.size());
+
+        std::cout << quoteList[randNum]->print() << std::endl;
+    }
     void print() {
         for (size_t i = 0; i < quoteList.size(); i++) {
             std::cout << i+1 << ". ---- " << std::endl;

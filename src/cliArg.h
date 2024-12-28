@@ -33,6 +33,9 @@ public:
             } else if (arg == "-a" || arg == "--add") {
                 addQoute(quotes);
 
+            } else if (arg == "-r" || arg == "--random") {
+                printRandom(quotes);
+
             } else {
                 std::cout << "Argument: " << arg << std::endl;
 
@@ -42,6 +45,9 @@ public:
     }
 
 private:
+    void printRandom(Quotes &quotes) {
+        quotes.printRandom();
+    }
     void printAll(Quotes &quotes) {
         quotes.print();
     }

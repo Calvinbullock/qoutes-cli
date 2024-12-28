@@ -12,9 +12,10 @@ void runTest() {
 int main (int argc, char *argv[]) {
     runTest();
 
+    // Construct arg / quotes class
     CliArg cli = CliArg();
-
     Quotes quotes = Quotes();
+
     cli.parse(argc, argv, quotes);
 
     return 0;
