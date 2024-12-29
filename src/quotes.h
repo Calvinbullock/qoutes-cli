@@ -71,7 +71,7 @@ public:
         return quoteList.size();
     }
 
-    bool validate(int index) {
+    bool validateIndex(int index) {
         int size = quoteList.size();
         return 0 <= index && index < size;
     }
