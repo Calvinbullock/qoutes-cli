@@ -17,7 +17,7 @@ public:
     //
     // Run all tests
     void run() {
-        validateTest_0();
+        validateIndexTest_0();
 
         total(); // last function call in run
     }
@@ -29,15 +29,15 @@ private:
      *  input: index = 0, size = 1
      *  output: index[0] = true
      */
-    void validateTest_0() {
+    void validateIndexTest_0() {
         /*
         // setup
-        std::string testCase = "validateTest_0";
+        std::string testCase = "validateIndexTest_0";
         Quotes qs = Quotes();
         qs.quoteList.push_back(new Quote("", ""));
 
         // exercise
-        bool isValid = qs.validate(0);
+        bool isValid = qs.validateIndex(0);
 
         // check
         assertValues(testCase, isValid, true);
