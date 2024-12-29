@@ -16,14 +16,19 @@ public:
     }
 
     void total() {
+        // pass
         if (failCount == 0 && passCount == totalRunCount) {
-            std::cout << "All " << testName << "Tests Passed ✔️ " << std::endl;
+            std::cout << testName << " "
+                      << passCount << "/" << totalRunCount
+                      << " All Passed ✔️ "
+                      << std::endl;
 
-        } else {
-            std::cout << passCount << "/"
+        } else { // fail
+            std::cout << testName << " " << passCount << "/"
                 << passCount + failCount
                 << " Passed" << std::endl;
         }
+        std::cout << std::endl;
     }
 
     //
@@ -35,7 +40,9 @@ public:
             passCount++;
         } else {
             failCount++;
-            std::cout << "❗" << caseName << std::endl;
+            std::cout << "    ❗" << caseName << " -- "
+                      << value1 << " != " << value2
+                      << std::endl;
         }
     }
 
@@ -46,7 +53,9 @@ public:
             passCount++;
         } else {
             failCount++;
-            std::cout << "❗" << caseName << std::endl;
+            std::cout << "    ❗" << caseName << " -- "
+                      << value1 << " != " << value2
+                      << std::endl;
         }
     }
 
@@ -57,7 +66,9 @@ public:
             passCount++;
         } else {
             failCount++;
-            std::cout << "❗" << caseName << std::endl;
+            std::cout << "    ❗" << caseName << " -- "
+                      << value1 << " != " << value2
+                      << std::endl;
         }
     }
 
