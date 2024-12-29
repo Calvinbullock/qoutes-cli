@@ -1,12 +1,17 @@
 
 #include "cliArg.h"
 #include "quotes.h"
+#include "../tests/quotesTest.h"
+
 #include <iostream>
 
 void runTest() {
     std::cout << "Running Tests..." << std::endl;
 
-    std::cout << "\n" << std::endl;
+    QuotesTest qsTest = QuotesTest("QuotesTest");
+    qsTest.run();
+
+    std::cout << std::endl;
 }
 
 int main (int argc, char *argv[]) {

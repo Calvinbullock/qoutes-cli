@@ -2,12 +2,21 @@
 #pragma once
 
 #include "quote.h"
+#include "../tests/quotesTest.h"
+
 #include <cassert>
 #include <cstdlib>
 #include <iostream>
 #include <string>
 
+class QuotesTest;
+
+//
+// Class Definition
 class Quotes {
+
+    friend QuotesTest;
+
 public:
     //
     // constructors
