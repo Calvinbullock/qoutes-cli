@@ -55,7 +55,7 @@ public:
             std::cout << quoteList[i]->print() << std::endl;
         }
     }
-    void addQoute(string authorName, string quoteBody) {
+    void addQoute(std::string authorName, std::string quoteBody) {
         quoteList.push_back(new Quote(authorName, quoteBody));
     }
     int getSize() {
@@ -63,5 +63,5 @@ public:
     }
 
 private:
-    vector<Quote*> quoteList;
+    std::vector<Quote*> quoteList;
 };

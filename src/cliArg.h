@@ -37,7 +37,7 @@ public:
                 printRandom(quotes);
 
             } else {
-                std::cout << "Argument: " << arg << std::endl;
+                std::cout << "Arg Not Recognised - Argument: " << arg << std::endl;
 
             }
             std::cout << std::endl;
@@ -61,11 +61,11 @@ private:
         std::string quoteBody;
         std::string author;
 
-        cout << "Enter the quote: ";
-        getline(cin, quoteBody);
+        std::cout << "Enter the quote: ";
+        getline(std::cin, quoteBody);
 
-        cout << "Enter the author: ";
-        getline(cin, author);
+        std::cout << "Enter the author: ";
+        getline(std::cin, author);
 
         quotes.addQoute(author, quoteBody);
     }
