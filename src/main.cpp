@@ -5,6 +5,9 @@
 
 #include <iostream>
 
+/* ===================================================
+ * RUN TESTS
+ * */
 void runTest() {
     std::cout << "Running Tests..." << std::endl;
 
@@ -14,6 +17,9 @@ void runTest() {
     std::cout << std::endl;
 }
 
+/* ===================================================
+ * MAIN - One shall stand, One stall fall
+ * */
 int main (int argc, char *argv[]) {
     runTest();
 
