@@ -25,7 +25,22 @@ public:
                 std::cout << "Version: 0.01" << std::endl;
 
             } else if ((arg == "-p" || arg == "--print") && i+1 < argc) {
-                print(quotes, i);
+                int index;
+                std::string userValue = argv[i+1];
+                i++; // move past the user input index
+
+                // catch string to int error
+                try {
+                    index = std::stoi(userValue);
+                } catch (const std::invalid_argument& e) {
+                    std::cout << "ERROR: Your quote value '"
+                              << userValue
+                              << "' is invalid.\n" << std::endl;
+                    return;
+                }
+
+                std::cout << index << std::endl;
+                print(quotes, index);
 
             } else if (arg == "-P" || arg == "--printAll") {
                 printAll(quotes);
@@ -54,7 +69,13 @@ private:
     }
 
     void print(Quotes &quotes, int &index) {
-        quotes[index + 1]->print();
+        index--; // change from user base count input to index base 0
+
+        if (!quotes.validateIndex(index)) {
+            std::cout << "ERROR: Your qoute could not be found." << std::endl;
+            return;
+        }
+        quotes[index]->print();
     }
 
     void addQoute(Quotes &quotes) {
