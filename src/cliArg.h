@@ -46,7 +46,7 @@ public:
                 printAll(quotes);
 
             } else if (arg == "-T" || arg == "--printAllTags") {
-                // TODO: add a way to print out all avalabel tags
+                // TODO: add a way to print out all available tags
                 //      maybe a tags object to store what tags are
                 //      available after parsing the database
 
@@ -99,11 +99,10 @@ private:
     void help() {
         std::cout << "Help message:\n"
             << "  -h, --help: Display this help message\n"
-            << "  -P: Print All qoutes\n"
-            << "  -p num: Print qoute number\n"
-            << "  -r : Print random qoute\n"
-            << "  -a : add a qoute\n"
-            << "  <arg2>: Second argument\n"
+            << "  -P: Print All quotes\n"
+            << "  -p <num>: Print quote number\n"
+            << "  -r : Print random quote\n"
+            << "  -a : add a quote\n"
             << std::endl;
     }
 };
