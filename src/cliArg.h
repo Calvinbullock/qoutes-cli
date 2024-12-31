@@ -45,6 +45,11 @@ public:
             } else if (arg == "-P" || arg == "--printAll") {
                 printAll(quotes);
 
+            } else if (arg == "-T" || arg == "--printAllTags") {
+                // TODO: add a way to print out all avalabel tags
+                //      maybe a tags object to store what tags are
+                //      available after parsing the database
+
             } else if (arg == "-a" || arg == "--add") {
                 addQoute(quotes);
 

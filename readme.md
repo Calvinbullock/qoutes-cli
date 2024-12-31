@@ -1,11 +1,11 @@
-#
-
-Build it in go-lang
-Build it in c++??
+# ReadMe for Quote CLI
 
 ## RUNING the program
 - `cd build`    - open the build directory
 - `cmake ..`    - build the makefile
+
+#### Dependencies
+- CMake ver 3.5
 
 #### Manuel Build / run
 - `cmake ..`            - build the makefile
@@ -14,8 +14,8 @@ Build it in c++??
 - `./qouteCLI`          - run the binary (Linux / MacOS)
 
 ## plans -- Stories
-- TDD - TEST DRIVEN!! FROM THE START
-- a program that display's a quote every time I start a terminal or with a cmd and can add new ones with cli tool
+- Tested with unit tests
+- a program that display's a quote every time I start a terminal or with a cmd and can add new ones with cli tools
     - nice formatting (when printing)
     - a help doc / tldr
     - store in a csv -- for now
