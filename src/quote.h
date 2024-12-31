@@ -4,20 +4,22 @@
 #include <iostream>
 #include <string>
 #include <vector>
-using namespace std;
 
-class Qoute {
+class Quote {
 
 public:
     //
     // constructors
-    Qoute() : qoute(), author(), tags() {}
-    Qoute(const string &qoute, const string &author)
+    Quote() : qoute(), author(), tags() {}
+    Quote(const std::string &author, const std::string &qoute)
          : qoute(qoute), author(author), tags() {}
 
     //
     // print / display
-    void print() {
+    std::string print() {
+        return "    " + qoute + "\n"
+             + "    - " + author + "\n";
+
         std::cout << "    " << qoute << std::endl;
         std::cout << "    - " << author << std::endl;
     }
@@ -36,12 +38,12 @@ public:
         // TODO: add line brakes every x count of chars
     }
 
-    void addQouteTag(const string &tag) {
+    void addQouteTag(const std::string &tag) {
         tags.push_back(tag);
     }
 
 protected:
-    string qoute;
-    string author;
-    vector<string> tags;
+    std::string qoute;
+    std::string author;
+    std::vector<std::string> tags;
 };

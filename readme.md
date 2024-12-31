@@ -1,18 +1,28 @@
-#
+# ReadMe for Quote CLI
 
-Build it in go-lang
-Build it in c++??
+## RUNNING the program
+- `cd build`    - open the build directory
+- `cmake ..`    - build the makefile
 
-## RUNING
-- `./run.sh`    - a shell script to run and build the program
+#### Dependencies
+- CMake ver 3.5
 
 #### Manuel Build / run
-- `go build`    - build the binary
-- `./qouteCli`  - run the binary
+- `cmake ..`            - build the makefile
+- `make`                - build the binary
+- `chmod +x qouteCLI`   - give run permission (Linux / MacOS)
+- `./qouteCLI`          - run the binary (Linux / MacOS)
+
+## Abilities / Help Docs
+-h, --help:     Display this help message
+-P:             Print All quotes with quote numbers
+-p <quote-num>: Print quote number
+-r :            Print random quote
+-a :            add a quote
 
 ## plans -- Stories
-- TDD - TEST DRIVEN!! FROM THE START
-- a program that display's a quote every time I start a terminal or with a cmd and can add new ones with cli tool
+- Tested with unit tests
+- a program that display's a quote every time I start a terminal or with a cmd and can add new ones with cli tools
     - nice formatting (when printing)
     - a help doc / tldr
     - store in a csv -- for now
@@ -20,3 +30,4 @@ Build it in c++??
 
 ## Stories
 - "sometimes while programming you need a quick burst of motivation, one that does not take you out of the flow, one that does not distract you, here it is qoutes-cli."
+
