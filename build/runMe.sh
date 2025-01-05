@@ -4,6 +4,7 @@
 make
 
 echo "--------------------------------------------------"
+echo ""
 
 # Get the arguments passed to this script
 #./qouteCLI "${ARGS[@]}"
