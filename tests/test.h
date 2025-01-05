@@ -1,4 +1,6 @@
 
+#pragma once
+
 #include <iostream>
 #include <string>
 
@@ -20,15 +22,14 @@ public:
         if (failCount == 0 && passCount == totalRunCount) {
             std::cout << testName << " "
                       << passCount << "/" << totalRunCount
-                      << " All Passed ✔️ "
+                      << " - All Passed ✔️ "
                       << std::endl;
 
         } else { // fail
             std::cout << testName << " " << passCount << "/"
                 << passCount + failCount
-                << " Passed" << std::endl;
+                << " - Passed" << std::endl;
         }
-        std::cout << std::endl;
     }
 
     //
