@@ -2,6 +2,7 @@
 #include "cliArg.h"
 #include "quotes.h"
 #include "../tests/quotesTest.h"
+#include "../tests/fileParseTest.h"
 
 #include <iostream>
 
@@ -13,6 +14,9 @@ void runTest() {
 
     QuotesTest qsTest = QuotesTest("QuotesTest");
     qsTest.run();
+
+    FileParseTest fpTest = FileParseTest("FileParseTest");
+    fpTest.run();
 
     std::cout << std::endl;
 }
