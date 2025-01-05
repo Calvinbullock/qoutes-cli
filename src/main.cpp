@@ -1,6 +1,7 @@
 
 #include "cliArg.h"
 #include "quotes.h"
+#include "../tests/quoteTest.h"
 #include "../tests/quotesTest.h"
 #include "../tests/fileParseTest.h"
 
@@ -11,6 +12,9 @@
  * */
 void runTest() {
     std::cout << "Running Tests..." << std::endl;
+
+    QuoteTest qTest = QuoteTest("QuoteTest");
+    qTest.run();
 
     QuotesTest qsTest = QuotesTest("QuotesTest");
     qsTest.run();

@@ -30,9 +30,9 @@ private:
      *  output: index[0] = true
      */
     void validateIndexTest_0() {
-        // TODO:
-        /*
+        // BUG:
         // setup
+        /*
         std::string testCase = "validateIndexTest_0";
         Quotes qs = Quotes();
         qs.quoteList.push_back(new Quote("", ""));
