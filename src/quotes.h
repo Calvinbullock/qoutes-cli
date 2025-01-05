@@ -5,9 +5,6 @@
 #include "../tests/quotesTest.h"
 
 #include <cassert>
-#include <cstdlib>
-#include <iostream>
-#include <string>
 
 class QuotesTest;
 
@@ -21,6 +18,7 @@ public:
     //
     // constructors
     Quotes() {
+        // TODO: remove when file parsing ready
         quoteList.push_back(new Quote("Jack", "I'm waveing you over."));
         quoteList.push_back(new Quote("YeYe", "fobar"));
     }
